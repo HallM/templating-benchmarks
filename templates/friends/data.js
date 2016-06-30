@@ -6,6 +6,9 @@ module.exports = {
     getFullNameRaptor: function(friend) {
         return friend.firstName + ' ' + friend.lastName;
     },
+    getFullNameMve: function(friend) {
+        return friend.firstName + ' ' + friend.lastName;
+    },
     "friends": [
         {
             "id": 0,

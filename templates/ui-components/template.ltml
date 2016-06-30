@@ -1,0 +1,3 @@
+<div class="my-app">
+    {include "components/LisplateColors" p:.}
+</div>
