@@ -1,10 +1,10 @@
 <html>
     <head>
-        <title>{p:title}</title>
+        <title>{data::title}</title>
     </head>
     <body>
-        <p>{p:text}</p>
-        {each p:projects {fn (project)
+        <p>{data::text}</p>
+        {each data::projects {fn (project)
             <a href="{project.url}">{project.name}</a>
             <p>{project.description}</p>
         }

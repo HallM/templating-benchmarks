@@ -1,7 +1,7 @@
 {{fn (renderColor renderColors)
     <div className="colors">
-        Hello {p:name}
-        {renderColors p:colors renderColor}
+        Hello {data::name}
+        {renderColors data::colors renderColor}
     </div>
 }
     {fn (color)

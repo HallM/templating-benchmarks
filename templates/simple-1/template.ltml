@@ -1,9 +1,9 @@
 <div class="colors">
-    Hello {p:name}!
+    Hello {data::name}!
 
-    {if p:colors {fn
+    {if data::colors {fn
     <ul>
-        {each p:colors {fn (color)
+        {each data::colors {fn (color)
         <li class="color">{color}</li>
         }}
     </ul>

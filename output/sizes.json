@@ -2,19 +2,23 @@
     "friends": {
         "gzipped": {
             "dust": 489,
+            "lisplate": 499,
             "marko": 470
         },
         "uncompressed": {
             "dust": 1387,
+            "lisplate": 1254,
             "marko": 914
         }
     },
     "if-expression": {
         "gzipped": {
+            "lisplate": 343,
             "marko": 281,
-            "pug": 1196
+            "pug": 1197
         },
         "uncompressed": {
+            "lisplate": 718,
             "marko": 469,
             "pug": 2801
         }
@@ -23,12 +27,14 @@
         "gzipped": {
             "dust": 262,
             "handlebars": 553,
+            "lisplate": 279,
             "marko": 247,
             "marko (native-for)": 271
         },
         "uncompressed": {
             "dust": 563,
             "handlebars": 1551,
+            "lisplate": 470,
             "marko": 379,
             "marko (native-for)": 407
         }
@@ -37,12 +43,14 @@
         "gzipped": {
             "dust": 268,
             "handlebars": 530,
+            "lisplate": 272,
             "marko": 250,
             "marko (native-for)": 275
         },
         "uncompressed": {
             "dust": 595,
             "handlebars": 1573,
+            "lisplate": 453,
             "marko": 380,
             "marko (native-for)": 408
         }
@@ -50,20 +58,24 @@
     "reverse-helper": {
         "gzipped": {
             "dust": 151,
+            "lisplate": 182,
             "marko": 167
         },
         "uncompressed": {
             "dust": 321,
+            "lisplate": 279,
             "marko": 219
         }
     },
     "search-results": {
         "gzipped": {
             "dust": 545,
+            "lisplate": 571,
             "marko": 536
         },
         "uncompressed": {
             "dust": 1523,
+            "lisplate": 1449,
             "marko": 1189
         }
     },
@@ -73,6 +85,7 @@
             "dust": 255,
             "handlebars": 434,
             "react": 262,
+            "lisplate": 274,
             "marko": 251,
             "nunjucks": 466,
             "pug": 788,
@@ -83,6 +96,7 @@
             "dust": 493,
             "handlebars": 880,
             "react": 478,
+            "lisplate": 509,
             "marko": 369,
             "nunjucks": 991,
             "pug": 1508,
@@ -92,20 +106,24 @@
     "simple-2": {
         "gzipped": {
             "dust": 268,
+            "lisplate": 300,
             "marko": 255
         },
         "uncompressed": {
             "dust": 648,
+            "lisplate": 624,
             "marko": 484
         }
     },
     "ui-components": {
         "gzipped": {
             "react": 204,
+            "lisplate": 225,
             "marko": 179
         },
         "uncompressed": {
             "react": 310,
+            "lisplate": 281,
             "marko": 219
         }
     }

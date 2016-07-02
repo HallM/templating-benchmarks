@@ -34,7 +34,7 @@ module.exports = {
         engine.compileFn(templatePath, src, callback);
     },
     compile: function(src, templatePath, templateName, callback) {
-        var compiled = 'var template = ' + engine.compile(src);
+        var compiled = 'var template = ' + engine.compile(templateName, src);
         callback(null, compiled);
     }
 };
