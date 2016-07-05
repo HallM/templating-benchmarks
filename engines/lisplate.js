@@ -1,4 +1,4 @@
-var Lisplate = require('lisplate');
+var Lisplate = require('../../lisplate');
 var fs = require('fs');
 var path = require('path');
 var Bluebird = require('bluebird');
@@ -6,7 +6,7 @@ var Bluebird = require('bluebird');
 var readFile = Bluebird.promisify(fs.readFile);
 
 var engine = new Lisplate({
-    sourceLoader: function(name, callback) {
+    sourceLoader: function(name) {
         var filepath = path.resolve(__dirname, '..', 'templates', 'ui-components', name + '.ltml');
         return readFile(filepath, 'UTF-8');
     },

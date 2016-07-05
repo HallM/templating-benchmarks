@@ -1,7 +1,7 @@
 {{fn (renderColor renderColors)
     <div className="colors">
         Hello {data::name}
-        {renderColors data::colors renderColor}
+        {!renderColors data::colors renderColor}
     </div>
 }
     {fn (color)
@@ -11,8 +11,8 @@
     }
 
     {fn (colors renderColor)
-        {if colors.length {fn
-            <ul>{colors.map renderColor}</ul>
+        {if {isNotEmpty colors} {fn
+            <ul>{each colors renderColor}</ul>
         } {fn
             <div>No colors!</div>
         }}
