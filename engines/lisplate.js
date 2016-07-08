@@ -1,4 +1,4 @@
-var Lisplate = require('../../lisplate');
+var Lisplate = require('lisplate');
 var fs = require('fs');
 var path = require('path');
 var Bluebird = require('bluebird');
@@ -7,12 +7,12 @@ var readFile = Bluebird.promisify(fs.readFile);
 
 var engine = new Lisplate({
     sourceLoader: function(name) {
-        var filepath = path.resolve(__dirname, '..', 'templates', 'ui-components', name + '.ltml');
+        var filepath = path.resolve(__dirname, '..', 'templates', name + '.ltml');
         return readFile(filepath, 'UTF-8');
     },
 
     viewModelLoader: function(templatePath) {
-        var filepath = path.resolve(__dirname, '..', 'templates', 'ui-components', templatePath + '.js');
+        var filepath = path.resolve(__dirname, '..', 'templates', templatePath + '.js');
         var viewmodel = null;
         try {
             viewmodel = require(filepath);
@@ -31,7 +31,9 @@ module.exports = {
         engine.render(template, data, callback);
     },
     load: function(src, templatePath, templateName, callback) {
-        engine.compileFn(templatePath, src, callback);
+        var compiled = engine.compile(templateName, src);
+        var renderFactory = engine.loadCompiledSource(compiled);
+        engine.loadTemplate({templateName: templateName, renderFactory: renderFactory}, callback);
     },
     compile: function(src, templatePath, templateName, callback) {
         var compiled = 'var template = ' + engine.compile(templateName, src);

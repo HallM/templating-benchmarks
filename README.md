@@ -42,10 +42,11 @@ NOTE 1: While React is not a "templating engine", it is commonly used to render 
 
 The following results were collected with the following setup:
 
-- Node.js v6.2.2
-- MacBook Air (Mid 2012)
-- Processor: 1.8 GHz Intel Core i5
-- Memory: 4 GB 1600 MHz DDR3
+- Node.js v6.2.0
+- MacBook Mini (Late 2014)
+- OSX 10.10.5
+- Processor: 2.6 GHz Intel Core i5
+- Memory: 8 GB 1600 MHz DDR3
 
 ## Performance
 
@@ -56,59 +57,59 @@ Higher numbers are better.
                       RUNTIME PERFORMANCE
                       ===================
                       friends
-                   ✓ marko »    2,857 op/s (fastest)
-                ✗ lisplate »    1,556 op/s (45.54% slower)
-                    ✗ dust »      450 op/s (84.25% slower)
+                   ✓ marko »    3,873 op/s (fastest)
+                ✗ lisplate »    1,907 op/s (50.76% slower)
+                    ✗ dust »      778 op/s (79.91% slower)
 
                       if-expression
-                   ✓ marko »  174,290 op/s (fastest)
-                     ✗ pug »  107,024 op/s (38.59% slower)
-                ✗ lisplate »  100,207 op/s (42.51% slower)
+                   ✓ marko »  352,448 op/s (fastest)
+                     ✗ pug »  208,744 op/s (40.77% slower)
+                ✗ lisplate »  144,565 op/s (58.98% slower)
 
                       projects-escaped
-      ✓ marko (native-for) »   48,513 op/s (fastest)
-                   ✗ marko »   46,692 op/s (3.75% slower)
-                ✗ lisplate »   32,334 op/s (33.35% slower)
-              ✗ handlebars »   23,785 op/s (50.97% slower)
-                    ✗ dust »   14,703 op/s (69.69% slower)
+      ✓ marko (native-for) »   83,506 op/s (fastest)
+                   ✗ marko »   72,298 op/s (13.42% slower)
+                ✗ lisplate »   50,150 op/s (39.94% slower)
+              ✗ handlebars »   41,653 op/s (50.12% slower)
+                    ✗ dust »   32,729 op/s (60.81% slower)
 
                       projects-unescaped
-      ✓ marko (native-for) »  189,790 op/s (fastest)
-                   ✗ marko »  177,828 op/s (6.30% slower)
-                ✗ lisplate »  113,746 op/s (40.07% slower)
-              ✗ handlebars »   70,960 op/s (62.61% slower)
-                    ✗ dust »   36,667 op/s (80.68% slower)
+      ✓ marko (native-for) »  361,364 op/s (fastest)
+                   ✗ marko »  337,788 op/s (6.52% slower)
+              ✗ handlebars »  131,089 op/s (63.72% slower)
+                ✗ lisplate »  126,023 op/s (65.13% slower)
+                    ✗ dust »   70,054 op/s (80.61% slower)
 
                       reverse-helper
-                   ✓ marko »  206,055 op/s (fastest)
-                ✗ lisplate »  143,766 op/s (30.23% slower)
-                    ✗ dust »   83,525 op/s (59.46% slower)
+                   ✓ marko »  414,272 op/s (fastest)
+                    ✗ dust »  224,419 op/s (45.83% slower)
+                ✗ lisplate »  205,142 op/s (50.48% slower)
 
                       search-results
-                   ✓ marko »   23,597 op/s (fastest)
-                ✗ lisplate »   13,924 op/s (40.99% slower)
-                    ✗ dust »    5,316 op/s (77.47% slower)
+                   ✓ marko »   33,888 op/s (fastest)
+                ✗ lisplate »   16,842 op/s (50.30% slower)
+                    ✗ dust »    8,980 op/s (73.50% slower)
 
                       simple-1
-                   ✓ marko »  102,568 op/s (fastest)
-                     ✗ dot »   97,373 op/s (5.06% slower)
-                     ✗ pug »   94,193 op/s (8.17% slower)
-                ✗ lisplate »   73,616 op/s (28.23% slower)
-              ✗ handlebars »   51,042 op/s (50.24% slower)
-                    ✗ swig »   39,920 op/s (61.08% slower)
-                    ✗ dust »   32,762 op/s (68.06% slower)
-                ✗ nunjucks »   18,712 op/s (81.76% slower)
-                   ✗ react »    2,051 op/s (98.00% slower)
+                   ✓ marko »  200,844 op/s (fastest)
+                     ✗ pug »  189,414 op/s (5.69% slower)
+                     ✗ dot »  175,816 op/s (12.46% slower)
+              ✗ handlebars »   98,864 op/s (50.78% slower)
+                ✗ lisplate »   92,798 op/s (53.80% slower)
+                    ✗ dust »   73,643 op/s (63.33% slower)
+                    ✗ swig »   67,505 op/s (66.39% slower)
+                ✗ nunjucks »   29,432 op/s (85.35% slower)
+                   ✗ react »    3,754 op/s (98.13% slower)
 
                       simple-2
-                   ✓ marko »  149,886 op/s (fastest)
-                ✗ lisplate »  102,882 op/s (31.36% slower)
-                    ✗ dust »   42,437 op/s (71.69% slower)
+                   ✓ marko »  294,916 op/s (fastest)
+                ✗ lisplate »  138,210 op/s (53.14% slower)
+                    ✗ dust »   86,137 op/s (70.79% slower)
 
                       ui-components
-                   ✓ marko »   29,619 op/s (fastest)
-                ✗ lisplate »    7,290 op/s (75.39% slower)
-                   ✗ react »    1,808 op/s (93.90% slower)
+                   ✓ marko »   71,076 op/s (fastest)
+                ✗ lisplate »   17,275 op/s (75.70% slower)
+                   ✗ react »    3,190 op/s (95.51% slower)
 ```
 <!-- </performance> -->
 
@@ -125,26 +126,26 @@ Lower numbers are better.
                                       (smallest)                 (smallest)
                     ✗ dust »   489 bytes gzipped    1387 bytes uncompressed
                                     3.89% larger              34.10% larger
-                ✗ lisplate »   499 bytes gzipped    1254 bytes uncompressed
-                                    5.81% larger              27.11% larger
+                ✗ lisplate »   489 bytes gzipped    1191 bytes uncompressed
+                                    3.89% larger              23.26% larger
 
                       if-expression
                    ✓ marko »   281 bytes gzipped     469 bytes uncompressed
                                       (smallest)                 (smallest)
-                ✗ lisplate »   343 bytes gzipped     718 bytes uncompressed
-                                   18.08% larger              34.68% larger
-                     ✗ pug »  1197 bytes gzipped    2801 bytes uncompressed
-                                   76.52% larger              83.26% larger
+                ✗ lisplate »   336 bytes gzipped     667 bytes uncompressed
+                                   16.37% larger              29.69% larger
+                     ✗ pug »  1195 bytes gzipped    2801 bytes uncompressed
+                                   76.49% larger              83.26% larger
 
                       projects-escaped
                    ✓ marko »   247 bytes gzipped     379 bytes uncompressed
                                       (smallest)                 (smallest)
                     ✗ dust »   262 bytes gzipped     563 bytes uncompressed
                                     5.73% larger              32.68% larger
+                ✗ lisplate »   262 bytes gzipped     440 bytes uncompressed
+                                    5.73% larger              13.86% larger
       ✗ marko (native-for) »   271 bytes gzipped     407 bytes uncompressed
                                     8.86% larger               6.88% larger
-                ✗ lisplate »   279 bytes gzipped     470 bytes uncompressed
-                                   11.47% larger              19.36% larger
               ✗ handlebars »   553 bytes gzipped    1551 bytes uncompressed
                                    55.33% larger              75.56% larger
 
@@ -153,8 +154,8 @@ Lower numbers are better.
                                       (smallest)                 (smallest)
                     ✗ dust »   268 bytes gzipped     595 bytes uncompressed
                                     6.72% larger              36.13% larger
-                ✗ lisplate »   272 bytes gzipped     453 bytes uncompressed
-                                    8.09% larger              16.11% larger
+                ✗ lisplate »   268 bytes gzipped     449 bytes uncompressed
+                                    6.72% larger              15.37% larger
       ✗ marko (native-for) »   275 bytes gzipped     408 bytes uncompressed
                                     9.09% larger               6.86% larger
               ✗ handlebars »   530 bytes gzipped    1573 bytes uncompressed
@@ -163,54 +164,54 @@ Lower numbers are better.
                       reverse-helper
                     ✓ dust »   151 bytes gzipped     321 bytes uncompressed
                                       (smallest)              31.78% larger
+                ✗ lisplate »   161 bytes gzipped     252 bytes uncompressed
+                                    6.21% larger              13.10% larger
                    ✗ marko »   167 bytes gzipped     219 bytes uncompressed
                                     9.58% larger                 (smallest)
-                ✗ lisplate »   182 bytes gzipped     279 bytes uncompressed
-                                   17.03% larger              21.51% larger
 
                       search-results
                    ✓ marko »   536 bytes gzipped    1189 bytes uncompressed
                                       (smallest)                 (smallest)
                     ✗ dust »   545 bytes gzipped    1523 bytes uncompressed
                                     1.65% larger              21.93% larger
-                ✗ lisplate »   571 bytes gzipped    1449 bytes uncompressed
-                                    6.13% larger              17.94% larger
+                ✗ lisplate »   556 bytes gzipped    1388 bytes uncompressed
+                                    3.60% larger              14.34% larger
 
                       simple-1
                    ✓ marko »   251 bytes gzipped     369 bytes uncompressed
                                       (smallest)                 (smallest)
-                    ✗ dust »   255 bytes gzipped     493 bytes uncompressed
-                                    1.57% larger              25.15% larger
+                    ✗ dust »   254 bytes gzipped     491 bytes uncompressed
+                                    1.18% larger              24.85% larger
+                ✗ lisplate »   259 bytes gzipped     460 bytes uncompressed
+                                    3.09% larger              19.78% larger
                    ✗ react »   262 bytes gzipped     478 bytes uncompressed
                                     4.20% larger              22.80% larger
-                ✗ lisplate »   274 bytes gzipped     509 bytes uncompressed
-                                    8.39% larger              27.50% larger
                      ✗ dot »   362 bytes gzipped     559 bytes uncompressed
                                    30.66% larger              33.99% larger
-              ✗ handlebars »   434 bytes gzipped     880 bytes uncompressed
-                                   42.17% larger              58.07% larger
-                ✗ nunjucks »   466 bytes gzipped     991 bytes uncompressed
-                                   46.14% larger              62.76% larger
+              ✗ handlebars »   431 bytes gzipped     877 bytes uncompressed
+                                   41.76% larger              57.92% larger
+                ✗ nunjucks »   465 bytes gzipped     991 bytes uncompressed
+                                   46.02% larger              62.76% larger
                     ✗ swig »   558 bytes gzipped    2636 bytes uncompressed
                                    55.02% larger              86.00% larger
-                     ✗ pug »   788 bytes gzipped    1508 bytes uncompressed
-                                   68.15% larger              75.53% larger
+                     ✗ pug »   786 bytes gzipped    1508 bytes uncompressed
+                                   68.07% larger              75.53% larger
 
                       simple-2
                    ✓ marko »   255 bytes gzipped     484 bytes uncompressed
                                       (smallest)                 (smallest)
                     ✗ dust »   268 bytes gzipped     648 bytes uncompressed
                                     4.85% larger              25.31% larger
-                ✗ lisplate »   300 bytes gzipped     624 bytes uncompressed
-                                   15.00% larger              22.44% larger
+                ✗ lisplate »   283 bytes gzipped     594 bytes uncompressed
+                                    9.89% larger              18.52% larger
 
                       ui-components
                    ✓ marko »   179 bytes gzipped     219 bytes uncompressed
                                       (smallest)                 (smallest)
                    ✗ react »   204 bytes gzipped     310 bytes uncompressed
                                    12.25% larger              29.35% larger
-                ✗ lisplate »   225 bytes gzipped     281 bytes uncompressed
-                                   20.44% larger              22.06% larger
+                ✗ lisplate »   210 bytes gzipped     270 bytes uncompressed
+                                   14.76% larger              18.89% larger
 ```
 <!-- </size> -->
 
